@@ -1,20 +1,15 @@
-import './App.css';
-import {MovieController} from './context/MovieContext'
-import NavBar from './components/NavBar'
-import MovieList from './components/MovieList'
-import MovieForm from './components/MovieForm'
+import "./App.css";
+import { DataController } from "./context/DataContext";
+import NavBar from "./components/NavBar";
+import DataList from "./components/DataList";
 
 function App() {
   return (
     <div className="App">
-      <MovieController>
-          <NavBar />
-          <MovieList />
-          <MovieForm />
-
-
-      </MovieController>
-     
+      <DataController>
+        <NavBar />
+        <DataList />
+      </DataController>
     </div>
   );
 }
